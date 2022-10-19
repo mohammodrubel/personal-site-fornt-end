@@ -1,0 +1,95 @@
+.mobileNav{
+    display: none;
+}
+.mobileLink{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 13.7rem;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    transform: translateX(-13.5rem);
+    transition: .4s ease-in-out;
+
+    ul .mobilelinkitem{
+        margin-top: 20px;
+        list-style: none;
+        padding: 5px;
+        border-radius: 5px;
+        &:hover{
+            background-color: yellow;
+            .mobileLinkGo{
+                color: black;
+                
+            }
+        }
+
+        .mobileLinkGo{
+            text-decoration: none;
+            // display: block;
+            color: white;
+            font-weight: 500;
+        }
+    }
+}
+.activeIndex{
+    background-color: yellow;
+}
+ol, ul{
+    padding: 0;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .activeNavbarinfo{
+        transform: translateX(0);
+        transition: .4s ease-in-out;
+    }
+    .mobileNav{
+        display: block;
+    }
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .activeNavbarinfo{
+        transform: translateX(0);
+        transition: .4s ease-in-out;
+    }
+    .mobileNav{
+        display: block;
+    }
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .activeNavbarinfo{
+        transform: translateX(0);
+        transition: .4s ease-in-out;
+    }
+    .mobileNav{
+        display: block;
+    }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+/*x-large devices (dekstops,1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    
+}
+
+/*Extra extra  large devices (larges desktops, 1200px and up)*/
+@media (min-width: 1400px) {
+
+}
